@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RetetaIngrediente" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RecipeIngredients">
+    <Key>
+      <PropertyRef Name="RecipeId" />
+      <PropertyRef Name="IngredientsId" />
+    </Key>
+    <Property Name="RecipeId" Type="Int32" Nullable="false" />
+    <Property Name="IngredientsId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="recipeIngredientsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RecipeIngredients" EntityType="Self.RecipeIngredients" />
+  </EntityContainer>
+</Schema>

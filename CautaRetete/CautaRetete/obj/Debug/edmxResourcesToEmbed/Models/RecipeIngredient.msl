@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RetetaIngredienteStoreContainer" CdmEntityContainer="recipeIngredientsEntities">
+    <EntitySetMapping Name="RecipeIngredients">
+      <EntityTypeMapping TypeName="RetetaIngrediente.RecipeIngredients">
+        <MappingFragment StoreEntitySet="RecipeIngredients">
+          <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+          <ScalarProperty Name="IngredientsId" ColumnName="IngredientsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

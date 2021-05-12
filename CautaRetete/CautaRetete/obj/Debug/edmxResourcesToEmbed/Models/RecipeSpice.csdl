@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="recipeSpicesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RecipeSpices">
+    <Key>
+      <PropertyRef Name="RecipeId" />
+      <PropertyRef Name="SpiceId" />
+    </Key>
+    <Property Name="RecipeId" Type="Int32" Nullable="false" />
+    <Property Name="SpiceId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="recipeSpicesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RecipeSpices" EntityType="Self.RecipeSpices" />
+  </EntityContainer>
+</Schema>
