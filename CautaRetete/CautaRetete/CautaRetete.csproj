@@ -95,6 +95,16 @@
       <DependentUpon>RecipeSpice.edmx</DependentUpon>
       <LastGenOutput>RecipeSpice.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\User.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>User.edmx</DependentUpon>
+      <LastGenOutput>User.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\User.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>User.edmx</DependentUpon>
+      <LastGenOutput>User.cs</LastGenOutput>
+    </Content>
     <Content Include="Server.asmx" />
     <Content Include="Models\Condiment.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -164,6 +174,24 @@
     </Compile>
     <Compile Include="Models\RecipeSpices.cs">
       <DependentUpon>RecipeSpice.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users.cs">
+      <DependentUpon>User.tt</DependentUpon>
     </Compile>
     <Compile Include="Server.asmx.cs">
       <DependentUpon>Server.asmx</DependentUpon>
@@ -260,6 +288,13 @@
     </EntityDeploy>
     <Content Include="Models\RecipeSpice.edmx.diagram">
       <DependentUpon>RecipeSpice.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\User.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>User.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\User.edmx.diagram">
+      <DependentUpon>User.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

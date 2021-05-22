@@ -24,7 +24,37 @@ namespace CautaRetete
         private Models.spicesEntities spices = new Models.spicesEntities();
         private Models.recipeIngredientsEntities recipeIngredients = new Models.recipeIngredientsEntities();
         private Models.recipeSpicesEntities recipeSpices = new Models.recipeSpicesEntities();
+        private Models.usersEntities users = new Models.usersEntities();
 
+        // Users methods
+
+        [WebMethod]
+        public bool ExistsUser(string username)
+        {
+            var user = users.Users.Where(u => u.username == username);
+            if(user.Count() > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        [WebMethod]
+        public bool PostUser(string username, string password)
+        {
+            if (!ExistsUser(username))
+            {
+                var user = new Models.Users()
+                {
+                    username = username,
+                    password = password
+                };
+                users.Users.Add(user);
+                users.SaveChanges();
+                return true;
+            }
+            return false;
+        }
 
         // Recipes methods
         [WebMethod]
