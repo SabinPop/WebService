@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Services;
 
@@ -29,12 +31,26 @@ namespace CautaRetete
         // Users methods
 
         [WebMethod]
-        public bool ExistsUser(string username)
+        public Models.Users ExistsUser(string username)
         {
             var user = users.Users.Where(u => u.username == username);
-            if(user.Count() > 0)
+            if (user.Count() > 0)
             {
-                return true;
+                return user.FirstOrDefault();
+            }
+            return null;
+        }
+
+        [WebMethod]
+        public bool LoginOk(string username, string password)
+        {
+            var existent = ExistsUser(username);
+            if (existent != null)
+            {
+                var pass = existent.password;
+                if(pass.Equals(HashPassword(username, password))){
+                    return true;
+                }
             }
             return false;
         }
@@ -42,12 +58,12 @@ namespace CautaRetete
         [WebMethod]
         public bool PostUser(string username, string password)
         {
-            if (!ExistsUser(username))
+            if (ExistsUser(username) == null)
             {
                 var user = new Models.Users()
                 {
                     username = username,
-                    password = password
+                    password = HashPassword(username, password)
                 };
                 users.Users.Add(user);
                 users.SaveChanges();
@@ -55,6 +71,20 @@ namespace CautaRetete
             }
             return false;
         }
+
+        private string HashPassword(string username, string password)
+        {
+            if (string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password))
+            {
+                return null;
+            }
+            var sha1 = new SHA1CryptoServiceProvider();
+            var data = Encoding.UTF8.GetBytes(string.Concat(username, password));
+            var sha1data = sha1.ComputeHash(data);
+            var hashedPassword = Encoding.UTF8.GetString(sha1data);
+            return hashedPassword;
+        }
+
 
         // Recipes methods
         [WebMethod]
@@ -70,11 +100,11 @@ namespace CautaRetete
         }
 
         [WebMethod]
-        public Models.Recipes GetRecipeIdByName(string name)
+        public List<Models.Recipes> GetRecipeIdByName(string name)
         {
             var x = recipes.Recipes.Where(r => r.Name == name);
             if (x.Count() > 0)
-                return x.First();
+                return x.ToList();
             return null;
         }
 
@@ -179,8 +209,8 @@ namespace CautaRetete
                         });
                 }
                 ingredients.SaveChanges();
-                var recipeId = GetRecipeIdByName(name);
-                var ingredientId = GetIngredientIdByName(i);
+                var recipeId = GetRecipeIdByName(name)[0];
+                var ingredientId = GetIngredientIdByName(i)[0];
                 if (recipeId != null && ingredientId != null)
                 {
                     if (!ExistsRecipeIngredient(recipeId.Id, ingredientId.Id))
@@ -206,8 +236,8 @@ namespace CautaRetete
                         });
                 }
                 spices.SaveChanges();
-                var recipeId = GetRecipeIdByName(name);
-                var spiceId = GetSpiceIdByName(s);
+                var recipeId = GetRecipeIdByName(name)[0];
+                var spiceId = GetSpiceIdByName(s)[0];
                 if (recipeId != null && spiceId != null)
                 {
                     if (!ExistsRecipeSpice(recipeId.Id, spiceId.Id))
@@ -238,7 +268,7 @@ namespace CautaRetete
                 });
             recipes.SaveChanges();
         }
-
+/*
         [WebMethod]
         public void UpdateRecipe(int id, string recipeName, string recipeDescription)
         {
@@ -247,8 +277,8 @@ namespace CautaRetete
             r.Description = recipeDescription;
             recipes.SaveChanges();
         }
-
-        /*
+*/
+        
         [WebMethod]
         public void UpdateRecipe(int id, string recipeName, string recipeDescription, List<string> ingredientList, List<string> spiceList)
         {
@@ -267,7 +297,7 @@ namespace CautaRetete
                         });
                 }
                 ingredients.SaveChanges();
-                var ingredient = GetIngredientIdByName(i);
+                var ingredient = GetIngredientIdByName(i)[0];
                 if (ingredient != null)
                 {
                     if (!ExistsRecipeIngredient(id, ingredient.Id))
@@ -293,7 +323,7 @@ namespace CautaRetete
                         });
                 }
                 spices.SaveChanges();
-                var spiceId = GetSpiceIdByName(s);
+                var spiceId = GetSpiceIdByName(s)[0];
                 if (spiceId != null)
                 {
                     if (!ExistsRecipeSpice(id, spiceId.Id))
@@ -310,7 +340,7 @@ namespace CautaRetete
             recipeIngredients.SaveChanges();
             recipeSpices.SaveChanges();
         }
-        */
+        
 
         [WebMethod]
         public void DeleteRecipe(int id)
@@ -340,11 +370,11 @@ namespace CautaRetete
         }
 
         [WebMethod]
-        public Models.Ingredients GetIngredientIdByName(string name)
+        public List<Models.Ingredients> GetIngredientIdByName(string name)
         {
             var x = ingredients.Ingredients.Where(i => i.Name == name);
             if (x.Count() > 0)
-                return x.First();
+                return x.ToList();
             return null;
         }
 
@@ -406,11 +436,11 @@ namespace CautaRetete
             return spices.Spices.Find(id);
         }
         [WebMethod]
-        public Models.Spices GetSpiceIdByName(string name)
+        public List<Models.Spices> GetSpiceIdByName(string name)
         {
             var x = spices.Spices.Where(s => s.Name == name);
             if (x.Count() > 0)
-                return x.First();
+                return x.ToList();
             return null;
         }
 

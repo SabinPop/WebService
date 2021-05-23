@@ -11,10 +11,27 @@ namespace CautaRetete.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Security.Cryptography;
+    using System.Text;
+
     public partial class Users
     {
         public string username { get; set; }
         public string password { get; set; }
+
+        /*
+        public string HashPassword()
+        {
+            if(string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password))
+            {
+                return null;
+            }
+            var sha1 = new SHA1CryptoServiceProvider();
+            var data = Encoding.UTF8.GetBytes(string.Concat(username, password));
+            var sha1data = sha1.ComputeHash(data);
+            var hashedPassword = Encoding.UTF8.GetString(sha1data);
+            return hashedPassword;
+        }
+        */
     }
 }

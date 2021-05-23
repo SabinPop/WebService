@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\Models\User.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\Models\User.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

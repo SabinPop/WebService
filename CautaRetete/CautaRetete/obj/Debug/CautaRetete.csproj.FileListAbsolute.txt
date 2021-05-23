@@ -10,15 +10,15 @@ C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Sem
 C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\CautaRetete\CautaRetete\obj\Debug\CautaRetete.dll
 C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\CautaRetete\CautaRetete\obj\Debug\CautaRetete.pdb
 C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csprojAssemblyReference.cache
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csprojAssemblyReference.cache
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csproj.CoreCompileInputs.cache
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\obj\Debug\CautaRetete.dll
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\obj\Debug\CautaRetete.pdb
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\CautaRetete.dll.config
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\CautaRetete.dll
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\CautaRetete.pdb
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\EntityFramework.dll
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\EntityFramework.SqlServer.dll
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\EntityFramework.xml
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\bin\EntityFramework.SqlServer.xml
-C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Proiect\WebService\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csproj.CopyComplete
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\CautaRetete.dll.config
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\CautaRetete.dll
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\CautaRetete.pdb
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\EntityFramework.dll
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\EntityFramework.SqlServer.dll
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\EntityFramework.xml
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\bin\EntityFramework.SqlServer.xml
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csprojAssemblyReference.cache
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csproj.CoreCompileInputs.cache
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\obj\Debug\CautaRetete.csproj.CopyComplete
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\obj\Debug\CautaRetete.dll
+C:\Users\popsa\OneDrive - Technical University of Cluj-Napoca\Facultate\AN 3\Semestrul 2\II - informatica industriala\Laboratoare\laborator 4\II proiect\CautaRetete\CautaRetete\obj\Debug\CautaRetete.pdb

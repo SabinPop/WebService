@@ -65,10 +65,6 @@
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
-    <Diagrams>
-      <Diagram DiagramId="733330fbfd364dbba4891fa2d0a9dff0" Name="Diagram1">
-        <EntityTypeShape EntityType="Users.Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-      </Diagram>
-    </Diagrams>
+    <Diagrams></Diagrams>
   </Designer>
 </edmx:Edmx>
